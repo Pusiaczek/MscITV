@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "utils/fonts";
+@import "utils/variables";
+@import "base/base";
+
+@import "components/index";
+
+// @import "layout/header/top-navbar";
+@import "layout/header/main-header";
+@import "layout/header/main-navbar";
+@import "layout/header/alertbar";
+@import "layout/carousel-main";
+@import "layout/latest-news";
+@import "layout/featured-news";
+@import "layout/month-top";
+@import "layout/tut";
+@import "layout/news";
+@import "layout/footer";
+
+@import "layout/single-news";
