@@ -1,5 +1,5 @@
 $(() => {
-  const owlCarousel = require("owl.carousel")
+  // const owlCarousel = require("owl.carousel")
 
   $('.carousel-main-container').owlCarousel({
     autoplay: true,
