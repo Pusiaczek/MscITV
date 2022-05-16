@@ -1,0 +1,108 @@
+footer {
+  .footer-bg {
+    position: relative;
+  }
+
+  .footer-itv-logo-wrapper {
+    cursor: pointer;
+    width: 80%;
+    z-index: 100;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .footer-itv-logo {
+      // height: 80%;
+      width: 80%;
+    }
+  }
+
+  .footer-menu {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin: 1.5rem 0;
+    // overflow: hidden;
+    white-space: nowrap;
+    z-index: 200;
+
+    p {
+      margin: 8px 0;
+    }
+
+    p:hover {
+      color: $yellow;
+      transition: color 0.3s ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer-ribbon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  font-weight: 300;
+  min-height: 55px;
+}
+
+.footer-ribbon p {
+  display: inline-block;
+  margin: 0;
+
+  font-size: 0.75rem;
+  color: white;
+}
+
+.footer-ribbon-info span {
+  font-weight: 700;
+}
+
+.footer-ribbon-madewithlove-wrapper {
+  height: 22.5px;
+}
+
+.footer-ribbon-madewithlove {
+  font-weight: 700;
+}
+
+.footer-ribbon-madewithlove span {
+  color: $red;
+}
+
+@include media-breakpoint-up(md) {
+  footer {
+    .footer-itv-logo-wrapper {
+      width: 60%;
+    }
+  }
+}
+
+// Background image
+@include media-breakpoint-up(lg) {
+  footer {
+    .footer-itv-logo-wrapper {
+      height: 55%;
+      width: auto;
+    }
+  }
+
+  .footer-bg::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url("../gfx/footer/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: 140% 0;
+    background-size: contain;
+  }
+}
