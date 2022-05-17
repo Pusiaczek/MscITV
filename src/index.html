@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="./css/owl.theme.default.css"> -->
 
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- <script src="../node_modules/@popperjs/core/dist/umd/popper.js"></script> -->
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <script src="../node_modules/owl.carousel/dist/owl.carousel.js"></script>
-  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="../node_modules/jquery.marquee/jquery.marquee.js"></script>
   <script src="./js/carousels.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -33,96 +35,98 @@
       </div>
     </div>
 
-    <div class="alertbar">
-      <div class="container d-flex flex-row">
-        <p class="alertbar-tag ms-4">
-          <!--  ms-4 -->
+    <div class="info-bar">
+      <div class="info-bar-wrapper container d-flex flex-row">
+        <p class="info-bar__tag ms-4">
           WAŻNE!
         </p>
-        <div class="alertbar-wrapper">
-          <div class="alertbar-content">
-            <span class="alertbar-text">Starosta myślenicki: w naszym szpitalu nie ma przypadku koronawirusa</span>
-            <span class="alertbar-text">Lorem ipsum dolor sit amet.</span>
-            <span class="alertbar-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            <span class="alertbar-text">Progi astry obrok Miał miano chowa Białopiotrowiczem Czyż. Sukina kanię wzroku
-              widać wpółgłośne miłą Prześladując nieprzyjaciele pisano całym lasach.</span>
-            <span class="alertbar-text">Ciżby liczna lepsza Ciebie Białopiotrowiczowi miasta domów. Kusym porównywać
-              ujeżdżała jakby Stał targu była lękliwości.</span>
-            <!-- <span class="alertbar-text">Psem jest Czas ruch zbyt lasu też. Tych klasztorze nieruchomi zaludniono domy
-              Tadeuszowi Pójdziemy Zbyt lata.</span>
-            <span class="alertbar-text">Brzemienna Krzyknął plan Ogon szyb kart Zaś zaludniono pierwszéj tych
-              usłyszał.</span>
-            <span class="alertbar-text">Niby niebronił oznaczała Czas idą źwierzyny jaki pole wytryskał
-              batystową.</span>
-            <span class="alertbar-text">Nowy nierostrzygniony echo Kościuszkowskie wiem Niesiołowskiemu Już inne psem
-              najpiękniejszym lecz żołniersczyzny.</span>
-            <span class="alertbar-text">Dotąd galowy Przedstawiając Bramie barwie nalewa przejrzystość Dojeżdżaczowi
-              Szkoda.</span>
-            <span class="alertbar-text">Człek ochłonął stół Rodzoniutki Męsczyznom uśmierzył Przejmował Jeśli łące
-              wszystkiém Carski.</span> -->
+        <div class="info-bar__content">
+          <div class="info-bar__list d-flex align-items-center flex-row p-0 m-0">
+            <p class="info-bar__list-item">Starosta myślenicki: w naszym szpitalu nie ma przypadku
+              koronawirusa</p>
+            <p class="info-bar__list-item">Lorem ipsum dolor sit amet.</p>
+            <p class="info-bar__list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="info-bar__list-item">Progi astry obrok Miał miano chowa Białopiotrowiczem Czyż. Sukina kanię
+              wzroku
+              widać wpółgłośne miłą Prześladując nieprzyjaciele pisano całym lasach.</p>
+            <p class="info-bar__list-item">Ciżby liczna lepsza Ciebie Białopiotrowiczowi miasta domów. Kusym porównywać
+              ujeżdżała jakby Stał targu była lękliwości.</p>
           </div>
         </div>
       </div>
     </div>
-
-
   </header>
 
-  <section>
-    <nav class="main-navbar navbar navbar-expand-lg navbar-light text-uppercase p-lg-0">
-      <div class="container-lg text-center justify-content-around justify-content-lg-center font-weight-bold">
-        <!-- <div class="dropdown">
-          <a class="nav-link dropdown-toggle p-1 main-navbar-dropdown" data-bs-toggle="dropdown" href="second.html"
-            id="navbarDarkDropdownMenuLink" role="button" aria-expanded="false">
-            Wybierz rejon
-          </a>
-  
-          <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="second.html">Rejon #1</a></li>
-            <li><a class="dropdown-item" href="second.html">Rejon #2</a></li>
-            <li><a class="dropdown-item" href="second.html">Rejon #3</a></li>
-          </ul>
-        </div> -->
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav-left-toggler"
-          aria-controls="mainnav-left-toggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-light text-uppercase p-lg-0">
+    <div class="container-lg text-center justify-content-center justify-content-lg-around ">
+      <button class="navbar__toggler navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainnav-left-toggler" aria-controls="mainnav-left-toggler" aria-expanded="false"
+        aria-label="Toggle navigation">
+        MENU
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse flex-grow-0" id="mainnav-left-toggler">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="second.html">Strona główna</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="second.html">Wydarzenia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="second.html">Ogłoszenia</a>
-            </li>
-            <li class="nav-item mr-auto">
-              <a class="nav-link" href="second.html">Reklama</a>
-            </li>
-            <li class="nav-item mr-auto">
-              <a class="nav-link" href="second.html">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="collapse navbar-collapse flex-grow-0" id="mainnav-left-toggler">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="second.html">Wybier rejon</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="second.html">Wybierz kategorię</a>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse flex-grow-0" id="mainnav-left-toggler">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="second.html">Strona główna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="second.html">Wydarzenia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="second.html">Ogłoszenia</a>
+          </li>
+          <li class="nav-item mr-auto">
+            <a class="nav-link" href="second.html">Reklama</a>
+          </li>
+          <li class="nav-item mr-auto">
+            <a class="nav-link" href="second.html">Kontakt</a>
+          </li>
+        </ul>
       </div>
-    </nav>
 
-  </section>
+      <div class="collapse navbar-collapse flex-grow-0" id="mainnav-left-toggler">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <button class="navbar__dropdown-btn btn dropdown-toggle" type="button" id="dropdownWybierzRejon"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Wybierz rejon
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownWybierzRejon">
+              <a class="dropdown-item" href="#">Gmina S</a>
+              <a class="dropdown-item" href="#">Gmina Ł</a>
+              <a class="dropdown-item" href="#">Gmina K</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="navbar__dropdown-btn btn dropdown-toggle" type="button" id="dropdownWybierzKategorie"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Wybierz kategorię
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownWybierzKategorie">
+              <a class="dropdown-item" href="#">S</a>
+              <a class="dropdown-item" href="#">Ł</a>
+              <a class="dropdown-item" href="#">K</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="ad-wrapper ad-1">
+    <div class="container text-center">
+      <hr class="ad-hr">
+      <p class="ad-title">reklama</p>
+      <hr class="ad-hr">
+      <div class="ad big-ad">
+        <h1>Reklama 1</h1>
+      </div>
+    </div>
+  </div>
 
 
 

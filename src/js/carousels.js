@@ -1,5 +1,12 @@
 $(() => {
-  // const owlCarousel = require("owl.carousel")
+  $('.info-bar__content').marquee({
+    speed: 100,
+    direction: "left",
+    duplicated: true,
+    pauseOnHover: true,
+    startVisible: true,
+    // delayBeforeStart: 400,
+  })
 
   $('.carousel-main-container').owlCarousel({
     autoplay: true,
