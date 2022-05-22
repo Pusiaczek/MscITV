@@ -12463,6 +12463,7 @@ p {
 .navbar {
   padding: 0.6rem !important;
   min-height: 4rem;
+  position: relative;
 }
 
 .navbar .navbar__toggler {
@@ -12495,6 +12496,15 @@ p {
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
+.navbar .dropdown {
+  position: static;
+}
+
+.navbar .dropdown .dropdown-menu .dropdown-item {
+  text-align: center;
+  padding: 0.75rem 0;
+}
+
 @media (min-width: 992px) {
   .navbar .main-navbar-dropdown,
   .navbar .navbar__dropdown-btn,
@@ -12504,6 +12514,18 @@ p {
     padding-bottom: 1rem;
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
+  }
+  .navbar .dropdown-menu {
+    width: 95%;
+    padding: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .navbar .dropdown-menu .dropdown-item {
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+    text-align: center;
   }
 }
 
