@@ -12352,6 +12352,18 @@ p {
   margin: 1.5rem auto;
 }
 
+.tag {
+  background-color: #3f3c97;
+  color: white;
+}
+
+.tag p {
+  padding: 5px 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .header {
   position: relative;
   background: #05092f;
@@ -12537,5 +12549,155 @@ p {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
+}
+
+.main-carousel {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.main-carousel .main-carousel__wrapper .main-carousel__item {
+  height: 100%;
+  position: relative;
+}
+
+.main-carousel .main-carousel__wrapper .main-carousel__item .main-carousel__bg {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.main-carousel .main-carousel__wrapper .main-carousel__item .main-carousel__tag {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.main-carousel .main-carousel__wrapper .main-carousel__item .main-carousel__label {
+  position: absolute;
+  display: inline-block;
+  font-family: "Roboto Condensed", sans-serif;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 5%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.main-carousel .main-carousel__wrapper .main-carousel__item .main-carousel__label .main-carousel__category {
+  position: absolute;
+  position: relative;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.main-carousel .main-carousel__wrapper .main-carousel__item .main-carousel__label .main-carousel__description {
+  position: absolute;
+  position: relative;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main-carousel .main-carousel__nav {
+  height: 5rem;
+}
+
+.main-carousel .main-carousel__nav .slick-list {
+  height: 100%;
+}
+
+.main-carousel .main-carousel__nav .slick-list .slick-track {
+  height: 100%;
+}
+
+.main-carousel .main-carousel__nav .slick-list .slick-track .slick-slide {
+  height: 100%;
+  margin: 0 5px;
+}
+
+.main-carousel .main-carousel__nav .slick-list .slick-track .slick-slide > div {
+  height: 100%;
+}
+
+.main-carousel .main-carousel__nav .slick-list .slick-track .slick-slide .main-carousel__nav-item {
+  height: 100%;
+  position: relative;
+}
+
+.main-carousel .main-carousel__nav .slick-list .slick-track .slick-slide .main-carousel__nav-item .main-carousel__nav-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  -webkit-transition: opacity 0.3 ease-in-out !important;
+  transition: opacity 0.3 ease-in-out !important;
+}
+
+.main-carousel .main-carousel__nav .slick-list .slick-track .slick-current .main-carousel__nav-bg {
+  opacity: 1 !important;
+}
+
+.latest-news .latest-news-list .latest-news-item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -0.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.latest-news .latest-news-list .latest-news-item.first::after,
+.latest-news .latest-news-list .latest-news-item.last::after {
+  content: none;
+}
+
+.latest-news .latest-news-list .latest-news-item {
+  margin: 1rem 4px;
+  position: relative;
+}
+
+.latest-news .latest-news-list .latest-news-item img {
+  width: 33%;
+}
+
+.latest-news .latest-news-list .latest-news-item .latest-news-item-label {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 100%;
+}
+
+.latest-news .latest-news-list .latest-news-item .latest-news-item-label .latest-news-item-category {
+  margin: 4px 0;
+  font-size: 0.75rem;
+  font-weight: 550;
+}
+
+.latest-news .latest-news-list .latest-news-item .latest-news-item-label .latest-news-item-description {
+  margin: 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.latest-news .latest-news-list .latest-news-item.first {
+  margin: 0.5rem 0.25rem;
+}
+
+.latest-news .latest-news-list .latest-news-item.first .latest-news-item-label {
+  margin: 2px 4px;
+}
+
+.latest-news .latest-news-list .latest-news-item.first .latest-news-item-label .latest-news-item-description {
+  overflow: auto;
+  white-space: normal;
+  text-overflow: clip;
 }
 /*# sourceMappingURL=style.css.map */

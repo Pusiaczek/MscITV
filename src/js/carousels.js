@@ -8,28 +8,51 @@ $(() => {
     // delayBeforeStart: 400,
   })
 
-  $('.carousel-main-container').owlCarousel({
-    autoplay: true,
-    autoplayTimeout: 4500,
-    autoplayHoverPause: true,
-    responsiveClass: false,
-    responsiveRefreshRate: 200,
-    smartSpeed: 1000,
-    dotsEach: true,
-    loop: true,
-    nav: false,
-    dots: false,
-    center: true,
-    margin: 0,
-    stagePadding: 0,
-    items: 1
+  $('.main-carousel__wrapper').slick({
+    infinite: false,
+    arrows: false,
+    autoplay: false,
+    slidesToShow: 1,
+    // initialSlide: 3,
+    slidesToScroll: 1,
   })
+
+  $('.main-carousel__nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 0,
+    centerPadding: 0,
+    asNavFor: '.main-carousel__wrapper',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    // initialSlide: 3,
+    arrows: false,
+    infinite: false
+  });
+
+
+  // $('.carousel-main-container').owlCarousel({
+  //   autoplay: true,
+  //   autoplayTimeout: 4500,
+  //   autoplayHoverPause: true,
+  //   responsiveClass: false,
+  //   responsiveRefreshRate: 200,
+  //   smartSpeed: 1000,
+  //   dotsEach: true,
+  //   loop: true,
+  //   nav: false,
+  //   dots: false,
+  //   center: true,
+  //   margin: 0,
+  //   stagePadding: 0,
+  //   items: 1
+  // })
 })
 
 
 
 
-// Main-carousel
+// Main - carousel
 // (function () {
 //   "use strict";
 
