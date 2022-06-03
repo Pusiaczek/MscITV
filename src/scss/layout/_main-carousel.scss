@@ -1,0 +1,98 @@
+.main-carousel {
+  height: max-content;
+  margin-bottom: 3rem;
+
+  .main-carousel__wrapper {
+    .main-carousel__item {
+      height: 100%;
+      position: relative;
+
+      .main-carousel__bg {
+        // position: relative;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        // height: 100%;
+        width: 100%;
+      }
+      .main-carousel__tag {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+      }
+      .main-carousel__label {
+        position: absolute;
+        display: inline-block;
+        font-family: $main-font;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+
+        color: white;
+
+        width: 100%;
+        padding: 5%;
+        bottom: 0%;
+        left: 0%;
+        .main-carousel__category {
+          position: absolute;
+          position: relative;
+          margin: 0;
+          font-size: 1rem;
+        }
+        .main-carousel__description {
+          position: absolute;
+          position: relative;
+          margin: 0;
+          font-size: 2rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .main-carousel__nav {
+    height: 5rem;
+
+    .slick-list {
+      height: 100%;
+
+      .slick-track {
+        height: 100%;
+
+        .slick-slide {
+          height: 100%;
+          // margin: 0 5px;
+
+          > div {
+            height: 100%;
+          }
+
+          .main-carousel__nav-item {
+            height: 100%;
+            position: relative;
+
+            .main-carousel__nav-bg {
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              padding: 2px;
+
+              // height: 100%;
+              // object-fit: cover;
+              // aspect-ratio: 16/9;
+              opacity: 0.4;
+              transition: opacity 0.3 ease-in-out !important;
+            }
+          }
+        }
+        .slick-current .main-carousel__nav-bg {
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .main-carousel {
+    margin-bottom: 0;
+  }
+}

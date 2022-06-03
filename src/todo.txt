@@ -63,7 +63,7 @@ DO POPRAWY 12.01.2022
     - separator 5 px w dół
     - wysokość żółtego paska +5px w dół i +5px w górę
     - delikatnie mniejsza prędkość przewijania
-    - pausa po najechaniu 
+    - pauza po najechaniu 
 
     8. Poprawic kwadraty
 
