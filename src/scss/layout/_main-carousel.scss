@@ -1,6 +1,6 @@
 .main-carousel {
   height: max-content;
-  // height: 100%;
+  margin-bottom: 3rem;
 
   .main-carousel__wrapper {
     .main-carousel__item {
@@ -59,7 +59,7 @@
 
         .slick-slide {
           height: 100%;
-          margin: 0 5px;
+          // margin: 0 5px;
 
           > div {
             height: 100%;
@@ -73,6 +73,7 @@
               position: absolute;
               height: 100%;
               width: 100%;
+              padding: 2px;
 
               // height: 100%;
               // object-fit: cover;
@@ -90,24 +91,8 @@
   }
 }
 
-// .carousel-main-container {
-//   .owl-stage-outer {
-//     height: 100%;
-//   }
-
-//   .owl-stage,
-//   .owl-item {
-//     height: 100%;
-//   }
-
-//   .owl-item {
-//     width: 100%;
-//     opacity: 0.5;
-//     transition: opacity 0.3s ease-in-out;
-//   }
-
-//   .owl-item.center {
-//     opacity: 1;
-//     transition: opacity 0.3s ease-in-out;
-//   }
-// }
+@include media-breakpoint-up(lg) {
+  .main-carousel {
+    margin-bottom: 0;
+  }
+}
